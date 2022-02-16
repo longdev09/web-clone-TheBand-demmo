@@ -1,0 +1,383 @@
+*{
+    padding:  0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Class dung chung co do uu tien cao nhat */
+.text-white{
+    color: #fff !important;
+}
+.text-center{
+    text-align: center !important;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding: 0px 8px;
+}
+.col-full{
+    width: 100%;
+}
+
+.colhaft{
+    width: 50%;
+}
+.colthird{
+    width: calc(100% / 3);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#main{
+
+}
+/* Phan header */
+
+
+#Header{
+    position: fixed;  
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+}
+#nav {
+    display: inline-block;
+}
+#nav > li > a{
+    color: aliceblue;
+    display: inline-block;
+    width: 100%;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+}
+#nav > li:hover > a{
+    color: #000!important;
+    background-color: #ccc!important
+}
+#nav  > li{
+    display: inline-block;
+}
+#nav  li {
+    
+    position: relative;
+    
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav{
+    min-width: 160px;
+    list-style-type: none;
+    position: absolute;
+    background-color: aliceblue;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+}
+#nav .subnav li a{
+    line-height: 38px;
+}
+/* di chuot vao  */
+.subnav li:hover a{
+    color: #000!important;
+    background-color: #ccc!important;
+    display: block;
+} 
+#nav .subnav a{
+    color: black;
+}
+/* Icon tim kiem */
+#Header .menu-mobile{
+    display: none;
+}
+#Header .menu-mobile,
+#Header .IconSearch{
+    color:aliceblue;    
+    float: right;
+    line-height: 46px;
+    padding: 0px 21px;
+
+    
+}
+/* Di chuot vao icon tim kiem */
+#Header .menu-mobile:hover,
+#Header .IconSearch:hover{
+    background-color:red;
+}
+/* slider */
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(./assets/img/tumblr_oncr9e57Uo1tvo2c3o1_r2_540.gif) top center / cover no-repeat
+}
+#slider .Text{
+    position: absolute;
+    bottom: 0;
+    color: aliceblue;
+    padding: 32px 16px;
+    width: 100%;
+    text-align: center;
+}
+#slider .text-Heading{
+    margin: 10px 0;
+}
+#slider .text-De{
+    margin: 10px 0;
+    text-transform: none;
+
+}
+/* content section */
+#Content .content-section{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px;
+    text-align: justify;
+    line-height: 1.5;
+    overflow: hidden;
+
+}
+.content-section .section-heading,
+.content-section .section-sub-heading{
+    text-align: center;
+}
+.content-section .section-heading{
+    margin: 10px 0px;
+    letter-spacing: 4px;
+}
+.content-section .section-sub-heading{
+    margin: 15px 0px;
+
+}
+#Content .PicTeam{
+    padding: 32px 0px;
+    overflow: hidden;
+}
+
+#Content .member-name{
+    margin: 15px 0px;
+    
+    font-size: 15px;
+}
+#Content .member-img{
+    width: 154px;
+    border-radius: 4px;
+}
+
+/* tour section */
+.tour-section{
+    background-color: #000;
+}
+
+.tour-section .ticker-tour{
+    background-color: #fff;
+    
+}
+.ticker-tour li{
+    padding: 8px 16px;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.ticker-tour .sold-out{
+    margin-left: 16px;
+    background-color: red;
+    padding: 3px 4px;
+    color: #fff;
+}
+.ticker-tour .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: -1px;
+}
+
+.tour-places{
+    margin-top: 32px;
+    overflow: hidden;
+}
+
+.places-img{
+    width: 100%;
+    display: block;
+}
+.places-img:hover{
+    opacity: 0.60;
+}
+.places-content{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+.places-name{
+    font-size: 15px;
+    font-weight: 700;
+
+}
+.places-time{
+    margin-top: 15px;
+}
+.places-texts{
+    margin: 15px 0px;
+
+}
+.places-btn{
+    background-color: #000;
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+}
+.places-btn:hover{
+    color: #000!important;
+    background-color: #ccc!important;
+}
+
+/* Modal */
+.modal.open{
+    display: flex
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0 , 0,  0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-content{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalChuyen ease 0.5s;
+}
+.modal-header{
+    height: 130px;
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    
+}
+.modal-heading-icon {
+    margin-right: 16px;
+    
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 16px;
+    color: #fff;
+}
+.modal-close:hover{
+    color: #000!important;
+    background-color: #ccc!important;
+}
+.modal-body{
+    padding: 16px;
+
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.modal-input{
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 8px;
+}
+#buy-ticker{
+    width: 100%;
+    padding: 16px;
+    background-color: #009688;
+    border: none;
+}
+#buy-ticker:hover{
+    color: #000!important;
+    background-color: #ccc!important;
+    cursor: pointer;
+}
+.modal-footer{
+    margin: 15px;
+    float: right;
+}
+.need-help a{
+    color: #2196F3!important;
+}
+
+
+/* Chuyen hoat dong tinh */
+@keyframes modalChuyen{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0px);
+
+    }
+}
+/* -- Contact  */
+.form-control{
+    padding: 8px;
+    width: 100%;
+}
+.Send{
+    float: right;
+    padding: 8px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+.Send:hover{
+    color: #000!important;
+    background-color: #ccc!important;
+}
+.map img{
+    width: 100%;
+}
+#Footer{
+    height: 80px;
+}
+.text-footer{
+    text-align: center;
+    padding: 64px 16px;
+    font-style: italic;
+}
+.text-footer a{
+    color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+

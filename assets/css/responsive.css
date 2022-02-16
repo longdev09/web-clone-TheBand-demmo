@@ -1,0 +1,70 @@
+
+/* Responsive Web */
+
+/* Kich thuoc  */
+/* 
+    PC: >= 1024px
+    Tablet: >= 740px && < 1024px
+    Mobile : <= 740px
+ */
+
+ @media (min-width: 1024px){
+    
+}
+ @media (min-width: 740px) and (max-width: 1024px){
+     
+}
+/* Mobile : <= 740px */
+@media (max-width: 740px){
+    .colhaif-full{
+        width: 100%
+    }
+    #nav {
+        display: block;
+        
+    }
+    #nav > li {
+        display: block;
+    }
+    #Header{
+        overflow: hidden;
+    }
+    #Header .IconSearch {
+        display: none;
+    }
+    #Header .menu-mobile{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 41px;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #Content .member-img{
+        width: 60%;
+
+    }
+    .places-mobile{
+
+        margin-bottom: 15px;
+    }
+    
+    .contact-form{
+        margin-top: 16px;
+    }
+    .mt-8px{
+        margin-top: 8px;
+    }
+    .Send {
+        padding: 14px;
+        width: 100%;
+}
